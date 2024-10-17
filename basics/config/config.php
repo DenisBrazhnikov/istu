@@ -1,6 +1,6 @@
 <?php
 
-return [
+$var = [
     'database' => [
         'host' => '127.0.0.1',
         'port' => 3306,
@@ -41,3 +41,5 @@ return [
         'locale' => 'en_US',
     ],
 ];
+
+var_dump($var);
