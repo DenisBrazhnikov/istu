@@ -23,6 +23,7 @@ echo '
 
 <body>
     <h2>Calc (Division operation)</h2>
+    <br>
     <form method="post">
         <input type="text" placeholder="Value 1" name="a">
         <br>
