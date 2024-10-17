@@ -24,7 +24,7 @@ echo '
 </head>
 
 <body>
-    <h2>Calc (Division operation)</h2>
+    <h2 id="heading">Calc (Division operation)</h2>
     <br>
     <form method="post">
         <input type="text" placeholder="Value 1" name="a">
