@@ -10,6 +10,8 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
 $result = '';
+$a = '';
+$b = '';
 
 if(isset($_POST['a']) && isset($_POST['b'])) {
     $a = intval($_POST['a']);
@@ -27,9 +29,9 @@ echo '
     <h2 id="heading">Calc (Division operation)</h2>
     <br>
     <form method="post">
-        <input type="text" placeholder="Value 1" name="a">
+        <input type="text" placeholder="Value 1" name="a" value="'. $a .'">
         <br>
-        <input type="text" placeholder="Value 1" name="b">
+        <input type="text" placeholder="Value 1" name="b" value="'. $b .'">
         <br>
         <button type="submit">Calculate</button>
         <br>
