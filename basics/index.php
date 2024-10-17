@@ -2,7 +2,7 @@
 
 setcookie('session', md5('session'), 0, '', '', false, false);
 
-header('X-SERVER: 2.4.59');
+header('X-SERVER: Apache 2.4.59');
 header('X-POWERED-BY: PHP 8.1.30');
 
 ini_set('display_errors', 1);
