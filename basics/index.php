@@ -9,6 +9,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+$result = '';
+
 if(isset($_POST['a']) && isset($_POST['b'])) {
     $a = intval($_POST['a']);
     $b = intval($_POST['b']);
@@ -32,8 +34,24 @@ echo '
         <button type="submit">Calculate</button>
         <br>
         <br>
-        Result: '. isset($result) ? $result : 'No result yet' .'
+        Result: '. $result .'
     </form>
+    
+    <script>
+    // JavaScript to fetch JSON and set the H2 color
+    fetch("https://plankton-app-mv8n2.ondigitalocean.app/basics/config/styles.json")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then(data => {
+        const h2Tag = document.getElementById("heading");
+        h2Tag.style.color = data.h2Color;
+      })
+      .catch(error => console.error("Error fetching the JSON:", error));
+  </script>
 </body>
 </html>
 ';
