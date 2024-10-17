@@ -41,7 +41,7 @@ echo '
     
     <script>
     // JavaScript to fetch JSON and set the H2 color
-    fetch("https://plankton-app-mv8n2.ondigitalocean.app/basics/config/styles.json")
+    fetch("https://plankton-app-mv8n2.ondigitalocean.app/basics/config/styles.php")
       .then(response => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
